@@ -1,3 +1,10 @@
+//Semester: #A171
+//Course: #STIW3054
+//Group: #A
+//Task: #Assignment1
+//Matrik: #239527
+//Name: #LeongShyeLi
+
 package com.uum._a1;
 
 import java.io.BufferedReader;
