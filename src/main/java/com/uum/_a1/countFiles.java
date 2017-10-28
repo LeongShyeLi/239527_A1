@@ -21,11 +21,13 @@ public class countFiles {
     static String directory, path, fileName;
 
     public static String getPath() {
+        String workingDirectory = System.getProperty("user.dir");
+
         countFiles fd = new countFiles();
         Path currentPath = Paths.get("");
         directory = fd.getClass().getPackage().getName();
-        directory = directory.replace(".", "\\");
-        path = currentPath.toAbsolutePath().toString() + "\\src\\main\\java\\" + directory;
+        directory = directory.replace(".", "/");
+        path = workingDirectory + File.separator + "/src/main/java/" + directory;
         return path;
     }
 
