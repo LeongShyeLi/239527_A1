@@ -11,8 +11,6 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 
 public class countFiles {
@@ -24,7 +22,6 @@ public class countFiles {
         String workingDirectory = System.getProperty("user.dir");
 
         countFiles fd = new countFiles();
-        Path currentPath = Paths.get("");
         directory = fd.getClass().getPackage().getName();
         directory = directory.replace(".", "/");
         path = workingDirectory + File.separator + "/src/main/java/" + directory;
